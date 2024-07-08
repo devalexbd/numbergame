@@ -1,0 +1,124 @@
+@font-face {
+    font-family: LazerGameZone;
+    src: url(assets/LazerGameZone.ttf);
+}
+
+body{
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68) ),url(images/metal.jpg);
+}
+
+.game-container {
+    margin: 5vh 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-weight:400;
+    font-size: 5vh;
+    color: rgb(211, 211, 211);
+    filter: drop-shadow(0 0 10px black);
+    margin-top: 0;
+    font-family: LazerGameZone;
+}
+
+#guess{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#guess-display {
+    color: rgb(211, 211, 211);
+}
+
+#guess-input{
+    margin-top:10px;
+    border-radius: 10px;
+}
+
+button{
+    width: 12vw;
+    height: 5vh;
+    margin-top: 10px;
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+button:hover{
+    cursor: pointer;
+    scale: 96%;
+    background-color: rgb(164, 164, 164);
+}
+
+.deactivate{
+    cursor:not-allowed;
+}
+
+.bg-bar {
+    background-image: url(images/metal.jpg);
+    width: 100%;
+    height: 10vh;
+    filter: drop-shadow(0 0 20px black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:500px){
+    button {
+        width: 40vw;
+    }
+    h1 {
+        margin: 0 5vw;
+    }
+    input {
+        /* height: 6vh; */
+        width: 40vw;
+        text-align: center;
+        font-size: 4vh;
+    }
+}
+
+#cheat-button {
+    background-color: transparent;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    height: 3.5vh;
+}
+
+.hidden {
+    display: none;
+}
+
+#cheat-display {
+    color: rgb(218, 207, 0);
+    filter: drop-shadow(0 0 10px black);
+}
+
+a {
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    transition: 0.35s;
+    text-shadow: 0 0 10px black;
+}
+
+a:hover {
+    color: rgb(238, 153, 255);
+    text-decoration: underline;
+    text-shadow: 0 0 20px black;
+}
+
